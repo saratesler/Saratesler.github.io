@@ -5,13 +5,33 @@
     <title>I like turtles.</title>
     <script
     src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js'></script>
-    
+
   </head>
   <body>
 
     <h1>I like turtles.</h1>
     <p>I just like them because I just like them they are cool. This is me writing something nice about turtles. They are green and they have hard shells. And 4 legs. Which is pretty cool I guess.
     </p>
+    <button id='hide' type="button" name="button">Click me to hide my header</button>
+
+    <button id='show' type="button" name="button">Click me to show my header</button>
 
   </body>
+  <script type="text/javascript">
+
+    $(document).ready(function() {
+      // when #hide is clicked...slide up
+      $('#hide').click(function() {
+        $('h1').slideUp();
+      });
+
+    });
+      $(document).ready(function() {
+    // when #show is clicked...slideDown
+    $('#show').click(function() {
+      $('h1').slideDown();
+    });
+
+  });
+  </script>
 </html>
